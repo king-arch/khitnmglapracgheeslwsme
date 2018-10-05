@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Groups | WritersMelon</title>
+
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="Bootstrap/dist/css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="Bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="Bootstrap/dist/css/bootstrap-grid.css">
+
+	<!-- Main Styles CSS -->
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.min.css">
+
+	<!-- Main Font -->
+	<script src="js/webfontloader.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: ['Roboto:300,400,500,700:latin']
+			}
+		});
+	</script>
+  <script type="text/javascript">
+    var el = document.querySelector('.more1');
+var btn = el.querySelector('.more-btn');
+var menu = el.querySelector('.more-menu');
+var visible = false;
+
+function showMenu(e) {
+    e.preventDefault();
+    if (!visible) {
+        visible = true;
+        el.classList.add('show-more-menu');
+        menu.setAttribute('aria-hidden', false);
+        document.addEventListener('mousedown', hideMenu, false);
+    }
+}
+
+function hideMenu(e) {
+    if (btn.contains(e.target)) {
+        return;
+    }
+    if (visible) {
+        visible = false;
+        el.classList.remove('show-more-menu');
+        menu.setAttribute('aria-hidden', true);
+        document.removeEventListener('mousedown', hideMenu);
+    }
+}
+
+btn.addEventListener('click', showMenu, false);
+  </script>
+	<style type="text/css">
+		.follow{
+			border: 1px solid #9aaf59;
+		    width: 50%;
+		    margin: 0 auto;
+		    color: #9aaf59;
+		}
+		.follow:hover{
+			background-color: #9aaf59;
+		}
+	</style>
+
+
+</head>
+<body>
+
+  <!-- Header-BP -->
+  <div class="container">
+    <header class="header" id="site-header">
+    		
+
+
+      <div class="page-title">
+        <img src="img/logo_wm.png" style="width: 150px !important;">
+      </div>
+
+      <div class="header-content-wrapper">
+        <form class="search-bar w-search notification-list friend-requests">
+          <div class="form-group with-button">
+            <input class="form-control js-user-search" placeholder="Search here Books & authors ..." type="text">
+            <button>
+              <svg class="olymp-magnifying-glass-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-magnifying-glass-icon"></use></svg>
+            </button>
+          </div>
+        </form>
+
+         <a href="feed.html" class="link-find-friend">Feed</a>
+        <a href="book_listing.html" class="link-find-friend">Book</a>
+         <a href="authors-listing.html" class="link-find-friend">Author</a>
+          <a href="blog_lisring.html" class="link-find-friend">Blog</a>
+           <a href="#" class="link-find-friend">Reading Club</a>
+           
+
+        <div class="control-block">       
+          <div class="control-icon more has-items">
+          <img src="img/notification_white.png" alt="arrow" class="back-icon" style="width: 21px;">
+            <!--   <i class="fa fa-bell-o"> </i> -->
+
+            <div class="label-avatar bg-primary">80</div>
+
+            <div class="more-dropdown more-with-triangle triangle-top-center">
+              <div class="ui-block-title ui-block-title-small">
+                <h6 class="title">Notifications</h6>
+                
+              </div>
+
+              <div class="mCustomScrollbar" data-mcs-theme="dark">
+                <ul class="notification-list">
+                  <li>
+                    <div class="author-thumb">
+                      <img src="img/avatar62-sm.jpeg" alt="author">
+                    </div>
+                    <div class="notification-event">
+                      <div><a href="#" class="h6 notification-friend">Mathilda Brinker</a> commented on your new <a href="#" class="notification-link">profile status</a>.</div>
+                      <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">4 hours ago</time></span>
+                    </div>
+                      <span class="notification-icon">
+                        <svg class="olymp-comments-post-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                      </span>
+
+                    <div class="more">
+                      <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                      <svg class="olymp-little-delete"><use xlink:href="svg-icons/sprites/icons.svg#olymp-little-delete"></use></svg>
+                    </div>
+                  </li>
+
+                  <li class="un-read">
+                    <div class="author-thumb">
+                      <img src="img/avatar63-sm.jpeg" alt="author">
+                    </div>
+                    <div class="notification-event">
+                      <div>You and <a href="#" class="h6 notification-friend">Nicholas Grissom</a> just became friends. Write on <a href="#" class="notification-link">his wall</a>.</div>
+                      <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">9 hours ago</time></span>
+                    </div>
+                      <span class="notification-icon">
+                        <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                      </span>
+
+                    <div class="more">
+                      <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                      <svg class="olymp-little-delete"><use xlink:href="svg-icons/sprites/icons.svg#olymp-little-delete"></use></svg>
+                    </div>
+                  </li>
+
+                  <li class="with-comment-photo">
+                    <div class="author-thumb">
+                      <img src="img/avatar64-sm.jpeg" alt="author">
+                    </div>
+                    <div class="notification-event">
+                      <div><a href="#" class="h6 notification-friend">Sarah Hetfield</a> commented on your <a href="#" class="notification-link">photo</a>.</div>
+                      <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">Yesterday at 5:32am</time></span>
+                    </div>
+                      <span class="notification-icon">
+                        <svg class="olymp-comments-post-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                      </span>
+
+                    <div class="comment-photo">
+                      <img src="img/comment-photo1.jpeg" alt="photo">
+                      <span>“She looks incredible in that outfit! We should see each...”</span>
+                    </div>
+
+                    <div class="more">
+                      <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                      <svg class="olymp-little-delete"><use xlink:href="svg-icons/sprites/icons.svg#olymp-little-delete"></use></svg>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="author-thumb">
+                      <img src="img/avatar65-sm.jpeg" alt="author">
+                    </div>
+                    <div class="notification-event">
+                      <div><a href="#" class="h6 notification-friend">Green Goo Rock</a> invited you to attend to his event Goo in <a href="#" class="notification-link">Gotham Bar</a>.</div>
+                      <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">March 5th at 6:43pm</time></span>
+                    </div>
+                      <span class="notification-icon">
+                        <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                      </span>
+
+                    <div class="more">
+                      <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                      <svg class="olymp-little-delete"><use xlink:href="svg-icons/sprites/icons.svg#olymp-little-delete"></use></svg>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="author-thumb">
+                      <img src="img/avatar66-sm.jpeg" alt="author">
+                    </div>
+                    <div class="notification-event">
+                      <div><a href="#" class="h6 notification-friend">James Summers</a> commented on your new <a href="#" class="notification-link">profile status</a>.</div>
+                      <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">March 2nd at 8:29pm</time></span>
+                    </div>
+                      <span class="notification-icon">
+                        <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                      </span>
+
+                    <div class="more">
+                      <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                      <svg class="olymp-little-delete"><use xlink:href="svg-icons/sprites/icons.svg#olymp-little-delete"></use></svg>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <a href="#" class="view-all bg-primary">View All Notifications</a>
+            </div>
+          </div>
+
+          <div class="author-page author vcard inline-items more">
+            <div class="author-thumb">
+              <img alt="author" src="img/author-page.jpeg" class="avatar">
+              <span class="icon-status online"></span>
+              <div class="more-dropdown more-with-triangle">
+                <div class="mCustomScrollbar" data-mcs-theme="dark">
+                  <!-- <div class="ui-block-title ui-block-title-small">
+                    <h6 class="title">Your Account</h6>
+                  </div> -->
+
+                  <ul class="account-settings">
+                    <li>
+                      <a href="#">
+                        <span>My Collections</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="profile.html">
+                        <span>Profile</span>
+                      </a>
+                    </li>
+                     <li>
+                      <a href="">
+                       <span>Setting</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                       <span>Sign Out</span>
+                      </a>
+                    </li>
+                  </ul>           
+
+                
+                </div>
+
+              </div>
+            </div>
+            <a href="02-ProfilePage.html" class="author-name fn">
+              <div class="author-title">
+                James Spiegel <svg class="olymp-dropdown-arrow-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-dropdown-arrow-icon"></use></svg>
+              </div>
+              <span class="author-subtitle">SPACE COWBOY</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- ... end Header-BP -->
+
+  <!-- Responsive Header-BP -->
+  <header class="header header-responsive" id="site-header-responsive">
+    <div class="header-content-wrapper">
+      <ul class="nav nav-tabs mobile-app-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#request" role="tab">
+            <div class="control-icon has-items">
+              <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+              <div class="label-avatar bg-blue">6</div>
+            </div>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#chat" role="tab">
+            <div class="control-icon has-items">
+              <img src="svg-icons/back-to-top.svg" alt="arrow" class="back-icon">
+              <div class="label-avatar bg-purple">2</div>
+            </div>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#notification" role="tab">
+            <div class="control-icon has-items">
+               <img src="svg-icons/back-to-top.svg" alt="arrow" class="back-icon">
+
+              <div class="label-avatar bg-primary">8898</div>
+            </div>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#search" role="tab">
+            <svg class="olymp-magnifying-glass-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-magnifying-glass-icon"></use></svg>
+            <svg class="olymp-close-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-close-icon"></use></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Tab panes -->
+    <div class="tab-content tab-content-responsive">
+
+      <div class="tab-pane " id="request" role="tabpanel">
+
+        <div class="mCustomScrollbar" data-mcs-theme="dark">
+          <div class="ui-block-title ui-block-title-small">
+            <h6 class="title">FRIEND REQUESTS</h6>
+            <a href="#">Find Friends</a>
+            <a href="#">Settings</a>
+          </div>
+          <ul class="notification-list friend-requests">
+            <li>
+              <div class="author-thumb">
+                <img src="img/avatar55-sm.jpeg" alt="author">
+              </div>
+              <div class="notification-event">
+                <a href="#" class="h6 notification-friend">Tamara Romanoff</a>
+                <span class="chat-message-item">Mutual Friend: Sarah Hetfield</span>
+              </div>
+                    <span class="notification-icon">
+                      <a href="#" class="accept-request">
+                        <span class="icon-add without-text">
+                          <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                        </span>
+                      </a>
+
+                      <a href="#" class="accept-request request-del">
+                        <span class="icon-minus">
+                          <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                        </span>
+                      </a>
+
+                    </span>
+
+              <div class="more">
+                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+              </div>
+            </li>
+            <li>
+              <div class="author-thumb">
+                <img src="img/avatar56-sm.jpeg" alt="author">
+              </div>
+              <div class="notification-event">
+                <a href="#" class="h6 notification-friend">Tony Stevens</a>
+                <span class="chat-message-item">4 Friends in Common</span>
+              </div>
+                    <span class="notification-icon">
+                      <a href="#" class="accept-request">
+                        <span class="icon-add without-text">
+                          <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                        </span>
+                      </a>
+
+                      <a href="#" class="accept-request request-del">
+                        <span class="icon-minus">
+                          <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                        </span>
+                      </a>
+
+                    </span>
+
+              <div class="more">
+                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+              </div>
+            </li>
+            <li class="accepted">
+              <div class="author-thumb">
+                <img src="img/avatar57-sm.jpeg" alt="author">
+              </div>
+              <div class="notification-event">
+                You and <a href="#" class="h6 notification-friend">Mary Jane Stark</a> just became friends. Write on <a href="#" class="notification-link">her wall</a>.
+              </div>
+                    <span class="notification-icon">
+                      <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                    </span>
+
+              <div class="more">
+                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                <svg class="olymp-little-delete"><use xlink:href="svg-icons/sprites/icons.svg#olymp-little-delete"></use></svg>
+              </div>
+            </li>
+            <li>
+              <div class="author-thumb">
+                <img src="img/avatar58-sm.jpeg" alt="author">
+              </div>
+              <div class="notification-event">
+                <a href="#" class="h6 notification-friend">Stagg Clothing</a>
+                <span class="chat-message-item">9 Friends in Common</span>
+              </div>
+                    <span class="notification-icon">
+                      <a href="#" class="accept-request">
+                        <span class="icon-add without-text">
+                          <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                        </span>
+                      </a>
+
+                      <a href="#" class="accept-request request-del">
+                        <span class="icon-minus">
+                          <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                        </span>
+                      </a>
+
+                    </span>
+
+              <div class="more">
+                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="view-all bg-blue">Check all your Events</a>
+        </div>
+
+      </div>
+
+      <div class="tab-pane " id="chat" role="tabpanel">
+
+        <div class="mCustomScrollbar" data-mcs-theme="dark">
+          <div class="ui-block-title ui-block-title-small">
+            <h6 class="title">Chat / Messages</h6>
+            <a href="#">Mark all as read</a>
+            <a href="#">Settings</a>
+          </div>
+
+          <ul class="notification-list chat-message">
+            <li class="message-unread">
+              <div class="author-thumb">
+                <img src="img/avatar59-sm.jpeg" alt="author">
+              </div>
+              <div class="notification-event">
+                <a href="#" class="h6 notification-friend">Diana Jameson</a>
+                <span class="chat-message-item">Hi James! It’s Diana, I just wanted to let you know that we have to reschedule...</span>
+                <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">4 hours ago</time></span>
+              </div>
+                    <span class="notification-icon">
+                      <svg class="olymp-chat---messages-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
+                    </span>
+              <div class="more">
+                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+              </div>
+            </li>
+
+            <li>
+              <div class="author-thumb">
+                <img src="img/avatar60-sm.jpeg" alt="author">
+              </div>
+              <div class="notification-event">
+                <a href="#" class="h6 notification-friend">Jake Parker</a>
+                <span class="chat-message-item">Great, I’ll see you tomorrow!.</span>
+                <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">4 hours ago</time></span>
+              </div>
+                    <span class="notification-icon">
+                      <svg class="olymp-chat---messages-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
+                    </span>
+
+              <div class="more">
+                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+              </div>
+            </li>
+            <li>
+              <div class="author-thumb">
+                <img src="img/avatar61-sm.jpeg" alt="author">
+              </div>
+              <div class="notification-event">
+                <a href="#" class="h6 notification-friend">Elaine Dreyfuss</a>
+                <span class="chat-message-item">We’ll have to check that at the office and see if the client is on board with...</span>
+                <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">Yesterday at 9:56pm</time></span>
+              </div>
+                      <span class="notification-icon">
+                        <svg class="olymp-chat---messages-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
+                      </span>
+              <div class="more">
+                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+              </div>
+            </li>
+
+            <li class="chat-group">
+              <div class="author-thumb">
+                <img src="img/avatar11-sm.jpeg" alt="author">
+                <img src="img/avatar12-sm.jpeg" alt="author">
+                <img src="img/avatar13-sm.jpeg" alt="author">
+                <img src="img/avatar10-sm.jpeg" alt="author">
+              </div>
+              <div class="notification-event">
+                <a href="#" class="h6 notification-friend">You, Faye, Ed &amp; Jet +3</a>
+                <span class="last-message-author">Ed:</span>
+                <span class="chat-message-item">Yeah! Seems fine by me!</span>
+                <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">March 16th at 10:23am</time></span>
+              </div>
+                      <span class="notification-icon">
+                        <svg class="olymp-chat---messages-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
+                      </span>
+              <div class="more">
+                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="view-all bg-purple">View All Messages</a>
+        </div>
+
+      </div>
+
+      <div class="tab-pane " id="notification" role="tabpanel">
+
+        <div class="mCustomScrollbar" data-mcs-theme="dark">
+          <div class="ui-block-title ui-block-title-small">
+            <h6 class="title">Notifications</h6>
+            <a href="#">Mark all as read</a>
+            <a href="#">Settings</a>
+          </div>
+
+          <ul class="notification-list">
+            <li>
+              <div class="author-thumb">
+                <img src="img/avatar62-sm.jpeg" alt="author">
+              </div>
+              <div class="notification-event">
+                <div><a href="#" class="h6 notification-friend">Mathilda Brinker</a> commented on your new <a href="#" class="notification-link">profile status</a>.</div>
+                <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">4 hours ago</time></span>
+              </div>
+                      <span class="notification-icon">
+                        <svg class="olymp-comments-post-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                      </span>
+
+              <div class="more">
+                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                <svg class="olymp-little-delete"><use xlink:href="svg-icons/sprites/icons.svg#olymp-little-delete"></use></svg>
+              </div>
+            </li>
+
+            <li class="un-read">
+              <div class="author-thumb">
+                <img src="img/avatar63-sm.jpeg" alt="author">
+              </div>
+              <div class="notification-event">
+                <div>You and <a href="#" class="h6 notification-friend">Nicholas Grissom</a> just became friends. Write on <a href="#" class="notification-link">his wall</a>.</div>
+                <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">9 hours ago</time></span>
+              </div>
+                      <span class="notification-icon">
+                        <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                      </span>
+
+              <div class="more">
+                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                <svg class="olymp-little-delete"><use xlink:href="svg-icons/sprites/icons.svg#olymp-little-delete"></use></svg>
+              </div>
+            </li>
+
+            <li class="with-comment-photo">
+              <div class="author-thumb">
+                <img src="img/avatar64-sm.jpeg" alt="author">
+              </div>
+              <div class="notification-event">
+                <div><a href="#" class="h6 notification-friend">Sarah Hetfield</a> commented on your <a href="#" class="notification-link">photo</a>.</div>
+                <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">Yesterday at 5:32am</time></span>
+              </div>
+                      <span class="notification-icon">
+                        <svg class="olymp-comments-post-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                      </span>
+
+              <div class="comment-photo">
+                <img src="img/comment-photo1.jpeg" alt="photo">
+                <span>“She looks incredible in that outfit! We should see each...”</span>
+              </div>
+
+              <div class="more">
+                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                <svg class="olymp-little-delete"><use xlink:href="svg-icons/sprites/icons.svg#olymp-little-delete"></use></svg>
+              </div>
+            </li>
+
+            <li>
+              <div class="author-thumb">
+                <img src="img/avatar65-sm.jpeg" alt="author">
+              </div>
+              <div class="notification-event">
+                <div><a href="#" class="h6 notification-friend">Green Goo Rock</a> invited you to attend to his event Goo in <a href="#" class="notification-link">Gotham Bar</a>.</div>
+                <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">March 5th at 6:43pm</time></span>
+              </div>
+                      <span class="notification-icon">
+                        <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                      </span>
+
+              <div class="more">
+                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                <svg class="olymp-little-delete"><use xlink:href="svg-icons/sprites/icons.svg#olymp-little-delete"></use></svg>
+              </div>
+            </li>
+
+            <li>
+              <div class="author-thumb">
+                <img src="img/avatar66-sm.jpeg" alt="author">
+              </div>
+              <div class="notification-event">
+                <div><a href="#" class="h6 notification-friend">James Summers</a> commented on your new <a href="#" class="notification-link">profile status</a>.</div>
+                <span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">March 2nd at 8:29pm</time></span>
+              </div>
+                      <span class="notification-icon">
+                        <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                      </span>
+
+              <div class="more">
+                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                <svg class="olymp-little-delete"><use xlink:href="svg-icons/sprites/icons.svg#olymp-little-delete"></use></svg>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="view-all bg-primary">View All Notifications</a>
+        </div>
+
+      </div>
+
+      <div class="tab-pane " id="search" role="tabpanel">
+
+
+          <form class="search-bar w-search notification-list friend-requests">
+            <div class="form-group with-button">
+              <input class="form-control js-user-search" placeholder="Search here people or pages..." type="text">
+            </div>
+          </form>
+
+
+      </div>
+
+    </div>
+    <!-- ... end  Tab panes -->
+  </header>
+  <!-- ... end Header-BP -->
+
+  <div class="header-spacer"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+      <div class= "responsive-flex1200 bg_trans">  
+          <div class="profile-section">
+            <div class="row">
+              <div class="col col-lg-12 col-md-12 col-sm-12 col-12 padding-left-0 padding-right-0 border-1">
+                  <div class="col col-lg-7 col-md-4 col-sm-4 col-xs-4 col-4 left padding-left-0">
+                    <h3 class="text-left title_b">Groups</h3>
+                  </div>
+                  <div class="col col-lg-2 col-md-4 col-sm-4 col-xs-4 col-4 left padding-left-0">
+                    <a href="create_blog.html" class="btn btn-primary btn-md-2 right" >
+                      <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path></svg> Create Blog</a>
+                  </div>
+                  <div class="col col-lg-3 col-md-5 col-sm-4 col-4 left padding-right-0">
+                    <ul class="profile-menu">                 
+                      <li>                    
+                        <div class="w-select pad_0">
+                          <fieldset class="form-group">
+                            <select class="selectpicker form-control" style="border: 0px !important;">
+                              <option value="NU"><i class="fa fa-check"></i>Sort by</option>
+                              <option value="NU"><i class="fa fa-check"></i>Date > Newest First</option>
+                              <option value="NU">Date > Oldest First</option>
+                              <option value="NU">Title > Oldest First</option>
+                              <option value="NU">Title > Oldest First</option>
+                            </select>
+                          </fieldset>
+                        </div>
+                      </li>
+                      <li class="container1">
+                        <div class="more1 margin-right--25">
+                          <button id="more-btn" class="more-btn">
+                              <span class="more-dot"></span>
+                              <span class="more-dot"></span>
+                              <span class="more-dot"></span>
+                          </button>
+                          <div class="more-menu">
+                              <div class="more-menu-caret">
+                                  <div class="more-menu-caret-outer"></div>
+                                  <div class="more-menu-caret-inner"></div>
+                              </div>
+                              <ul class="more-menu-items" tabindex="-1" role="menu" aria-labelledby="more-btn" aria-hidden="true">
+                                  <li class="more-menu-item" role="presentation">
+                                      <button type="button" class="more-menu-btn" role="menuitem">Set default</button>
+                                  </li>
+                                  <li class="more-menu-item" role="presentation">
+                                      <button type="button" class="more-menu-btn" role="menuitem">My Group(23)</button>
+                                  </li>
+                                  <li class="more-menu-item" role="presentation">
+                                      <button type="button" class="more-menu-btn" role="menuitem">Create Group</button>
+                                  </li>
+                                  <li class="more-menu-item" role="presentation">
+                                      <button type="button" class="more-menu-btn" role="menuitem">Admin(2)</button>
+                                  </li>
+                                  <li class="more-menu-item" role="presentation">
+                                      <button type="button" class="more-menu-btn" role="menuitem">Invited To(34)</button>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+       </div>
+     </div>
+    </div>
+  </div>        
+ 
+  <div class="container" id="blog-listing">
+  	<div class="row">
+  			<div class="row">
+  				<div class="col col-lg-3 col-md-4 col-sm-12 col-12 ">
+  					<div class="ui-block">
+  						<div class="friend-item hentry blog-post blog-post-v1">
+  							<div class="friend-header-thumb post-thumb">
+  								<img src="img/friend8.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 1000</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 35</a>
+                  </div>
+  							</div>
+  							<div class="friend-item-content align-left ">
+                   <a href="#" class="h4 blog-title">WordPress Developer Community</a>
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Public</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Admin</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  							</div>
+  						</div>
+  						<!-- ... end Friend Item -->					
+  					</div>
+  				</div>
+  				<div class="col col-lg-3 col-md-4 col-sm-12 col-12">
+            <div class="ui-block">
+              <!-- Friend Item -->
+              <div class="friend-item hentry blog-post blog-post-v1">
+                <div class="friend-header-thumb post-thumb">
+                  <img src="img/friend11.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 20</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 35</a>
+                  </div>
+                </div>
+
+                <div class="friend-item-content align-left ">
+                   <a href="#" class="h4 blog-title">Head of Head of UI/UX Designer Group </a>
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Public</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Admin</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... end Friend Item -->          
+            </div>
+          </div>
+  				<div class="col col-lg-3 col-md-4 col-sm-12 col-12">
+            <div class="ui-block">
+              <!-- Friend Item -->
+              <div class="friend-item hentry blog-post blog-post-v1">
+                <div class="friend-header-thumb post-thumb">
+                  <img src="img/friend1.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 700</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 3</a>
+                  </div>
+                </div>
+
+                <div class="friend-item-content align-left ">
+                   <a href="#" class="h4 blog-title">WritersMelon book readers Network</a>
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Open</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Admin</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... end Friend Item -->          
+            </div>
+          </div>
+  				<div class="col col-lg-3 col-md-4 col-sm-12 col-12">
+            <div class="ui-block">
+              <!-- Friend Item -->
+              <div class="friend-item hentry blog-post blog-post-v1">
+                <div class="friend-header-thumb post-thumb">
+                  <img src="img/friend2.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 1000</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 35</a>
+                  </div>
+                </div>
+
+                <div class="friend-item-content align-left ">
+                  <a href="#" class="h4 blog-title">WritersMelon Fiction Book Readers Clubs</a>
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Private</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Admin</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... end Friend Item -->          
+            </div>
+          </div>
+  				<div class="col col-lg-3 col-md-4 col-sm-12 col-12">
+            <div class="ui-block">
+              <!-- Friend Item -->
+              <div class="friend-item hentry blog-post blog-post-v1">
+                <div class="friend-header-thumb post-thumb">
+                  <img src="img/friend4.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 10</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 350</a>
+                  </div>
+                </div>
+
+                <div class="friend-item-content align-left ">
+                   <a href="#" class="h4 blog-title">Head WordPress Web Designers</a>
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Private</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Member</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... end Friend Item -->          
+            </div>
+          </div>
+  				<div class="col col-lg-3 col-md-4 col-sm-12 col-12">
+            <div class="ui-block">
+              <!-- Friend Item -->
+              <div class="friend-item hentry blog-post blog-post-v1">
+                <div class="friend-header-thumb post-thumb">
+                  <img src="img/friend5.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 1000</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 35</a>
+                  </div>
+                </div>
+
+                <div class="friend-item-content align-left ">
+                   <a href="#" class="h4 blog-title">The Project Manager Network</a>
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Public</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Admin</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... end Friend Item -->          
+            </div>
+          </div>
+          <div class="col col-lg-3 col-md-4 col-sm-12 col-12">
+            <div class="ui-block">
+              <!-- Friend Item -->
+              <div class="friend-item hentry blog-post blog-post-v1">
+                <div class="friend-header-thumb post-thumb">
+                  <img src="img/friend8.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 1000</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 35</a>
+                  </div>
+                </div>
+
+                <div class="friend-item-content align-left ">
+                  <a href="#" class="h4 blog-title">WordPress Developer Community</a>
+                  
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Public</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Member</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... end Friend Item -->          
+            </div>
+          </div>
+          <div class="col col-lg-3 col-md-4 col-sm-12 col-12 ">
+            <div class="ui-block">
+              <div class="friend-item hentry blog-post blog-post-v1">
+                <div class="friend-header-thumb post-thumb">
+                  <img src="img/friend8.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 1000</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 35</a>
+                  </div>
+                </div>
+                <div class="friend-item-content align-left ">
+                   <a href="#" class="h4 blog-title">WordPress Developer Community</a>
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Public</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Member</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... end Friend Item -->          
+            </div>
+          </div>
+          <div class="col col-lg-3 col-md-4 col-sm-12 col-12">
+            <div class="ui-block">
+              <!-- Friend Item -->
+              <div class="friend-item hentry blog-post blog-post-v1">
+                <div class="friend-header-thumb post-thumb">
+                  <img src="img/friend11.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 20</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 35</a>
+                  </div>
+                </div>
+
+                <div class="friend-item-content align-left ">
+                   <a href="#" class="h4 blog-title">Head of UI/UX Designer Group </a>
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Public</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Admin</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... end Friend Item -->          
+            </div>
+          </div>
+          <div class="col col-lg-3 col-md-4 col-sm-12 col-12">
+            <div class="ui-block">
+              <!-- Friend Item -->
+              <div class="friend-item hentry blog-post blog-post-v1">
+                <div class="friend-header-thumb post-thumb">
+                  <img src="img/friend1.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 700</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 3</a>
+                  </div>
+                </div>
+
+                <div class="friend-item-content align-left ">
+                   <a href="#" class="h4 blog-title">WritersMelon book readers Network</a>
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Open</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Member</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... end Friend Item -->          
+            </div>
+          </div>
+          <div class="col col-lg-3 col-md-4 col-sm-12 col-12">
+            <div class="ui-block">
+              <!-- Friend Item -->
+              <div class="friend-item hentry blog-post blog-post-v1">
+                <div class="friend-header-thumb post-thumb">
+                  <img src="img/friend2.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 1000</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 35</a>
+                  </div>
+                </div>
+
+                <div class="friend-item-content align-left ">
+                  <a href="#" class="h4 blog-title">WritersMelon Fiction Book Readers Clubss</a>
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Private</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Admin</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... end Friend Item -->          
+            </div>
+          </div>
+          <div class="col col-lg-3 col-md-4 col-sm-12 col-12">
+            <div class="ui-block">
+              <!-- Friend Item -->
+              <div class="friend-item hentry blog-post blog-post-v1">
+                <div class="friend-header-thumb post-thumb">
+                  <img src="img/friend4.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 10</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 350</a>
+                  </div>
+                </div>
+
+                <div class="friend-item-content align-left ">
+                   <a href="#" class="h4 blog-title">Head WordPress Web Designers</a>
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Private</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Member</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... end Friend Item -->          
+            </div>
+          </div>
+          <div class="col col-lg-3 col-md-4 col-sm-12 col-12">
+            <div class="ui-block">
+              <!-- Friend Item -->
+              <div class="friend-item hentry blog-post blog-post-v1">
+                <div class="friend-header-thumb post-thumb">
+                  <img src="img/friend5.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 1000</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 35</a>
+                  </div>
+                </div>
+
+                <div class="friend-item-content align-left ">
+                   <a href="#" class="h4 blog-title">The Project Manager Network</a>
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Public</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Admin</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... end Friend Item -->          
+            </div>
+          </div>
+          <div class="col col-lg-3 col-md-4 col-sm-12 col-12">
+            <div class="ui-block">
+              <!-- Friend Item -->
+              <div class="friend-item hentry blog-post blog-post-v1">
+                <div class="friend-header-thumb post-thumb">
+                  <img src="img/friend8.jpeg" alt="friend">
+                  <div class="post-content">
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light"> <i class="fa fa-users"></i> 1000</a>
+                    <a href="#" class="post-category margin-bottom-0 bg-blue-light right"><i class="fas fa-comments"></i> 35</a>
+                  </div>
+                </div>
+
+                <div class="friend-item-content align-left ">
+                  <a href="#" class="h4 blog-title">WordPress Developer Community</a>
+                  
+                  <div class="row group-detail">
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                      <p class="left margin-bottom-0">Public</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-6 col-lg-6 ">
+                      <span class="right margin-right-25">Member</span>
+                      <div class="three_dot_margin right">
+                        <div class="more font_three_dot">
+                          <i class="fa fa-ellipsis-h"></i>
+                          <ul class="more-dropdown more-with-triangle" style="max-height: 300px; overflow-y: scroll;">
+                            <li>
+                              <div class="checkbox content-justify">
+                                <label class="c-orange ">  Join Group</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" name="optionsCheckboxes"> Group Info  </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ... end Friend Item -->          
+            </div>
+          </div>
+  			</div>
+  		</div>
+      <a id="load-more-button" href="#" class="btn btn-control btn-more " data-load-link="items-to-load.html" data-container="newsfeed-items-grid">
+                <i class="fa fa-spinner fa-spin loader"></i>
+               </a>
+  		
+  	</div>
+  </div>
+
+  <a class="back-to-top" href="#">
+  	<img src="svg-icons/back-to-top.svg" alt="arrow" class="back-icon">
+  </a>
+
+  <!-- JS Scripts -->
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script src="js/perfect-scrollbar.js"></script>
+  <script src="js/jquery.matchHeight.js"></script>
+  <script src="js/svgxuse.js"></script>
+  <script src="js/imagesloaded.pkgd.js"></script>
+  <script src="js/Headroom.js"></script>
+  <script src="js/velocity.js"></script>
+  <script src="js/ScrollMagic.js"></script>
+  <script src="js/jquery.waypoints.js"></script>
+  <script src="js/jquery.countTo.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/material.min.js"></script>
+  <script src="js/bootstrap-select.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/selectize.js"></script>
+  <script src="js/swiper.jquery.js"></script>
+  <script src="js/moment.js"></script>
+  <script src="js/daterangepicker.js"></script>
+  <script src="js/simplecalendar.js"></script>
+  <script src="js/fullcalendar.js"></script>
+  <script src="js/isotope.pkgd.js"></script>
+  <script src="js/ajax-pagination.js"></script>
+  <script src="js/Chart.js"></script>
+  <script src="js/chartjs-plugin-deferred.js"></script>
+  <script src="js/circle-progress.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/run-chart.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script src="js/jquery.gifplayer.js"></script>
+  <script src="js/mediaelement-and-player.js"></script>
+  <script src="js/mediaelement-playlist-plugin.min.js"></script>
+  <script src="js/base-init.js"></script>
+  <script defer="" src="fonts/fontawesome-all.js"></script>
+  <script src="Bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
