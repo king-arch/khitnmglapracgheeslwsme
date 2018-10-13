@@ -58,7 +58,7 @@
 
      <a href="feed.html" class="link-find-friend">Feed</a>
     <a href="book_listing.html" class="link-find-friend">Book</a>
-     <a href="authors-listing.html" class="link-find-friend">Network</a>
+     <a href="authors-listing.html" class="link-find-friend">Author</a>
       <a href="blog_lisring.html" class="link-find-friend">Blog</a>
        <a href="group_lisring.html" class="link-find-friend">Reading Club</a>
         
@@ -620,59 +620,46 @@
 <div class="container">
   <div class="row">
      <div class="col col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-
-      <div class="ui-block responsive-flex1200 bg_trans">
-        <div class="ui-block-title pad_0">
-          <h1 style="font-size: 30px; font-weight: 500;">Create Campaign</h1>
+        <div class="ui-block responsive-flex1200 bg_trans">
+          <div class="ui-block-title pad_0">
+            <h1 style="font-size: 30px; font-weight: 500;">Create Campaign</h1>
+          </div>
         </div>
-      </div>
-    </div>     
+     </div>     
   </div>
    <hr class="new4">
-</div>
+</div>  
 <div class="container">
-  <div class="row">
-    <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">     
-      <div class="ui-block-content bg_white">       
+  <div class="row bg_white">
+    <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+
+      <div class="ui-block-content bg_white">   
+        
         <!-- Form Billing Details -->        
         <form class="mb60">        
           <div class="row">   
+             <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">  
+              <fieldset class="form-group">
+                <select class="selectpicker form-control">
+                  <option value="AL">Select Duration</option>
+                  <option value="2">15 days</option>
+                  <option value="2">30 days</option>
+                  <option value="2">45 days</option>
+                  <option value="2">60 days</option>
+                  <option value="2">90 days</option>              
+                </select>
+              </fieldset>
 
-          <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">  
+          </div>
+
+          <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">  
             <div class="form-group md-form  label-floating has-success">
                <label class="control-label c-grey">Book Title</label>
                     <input id="name"  required="required" class="form-control validate c-grey"  placeholder="" type="text"    >
                   </div>    
           </div>   
-           <div class="col col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">  
-              <fieldset class="form-group">
-                <select class="selectpicker form-control">
-                  <option value="AL">Alabama</option>
-                  <option value="2">Oklahoma</option>
-                  <option value="WY">Wyoming</option>
-                </select>
-              </fieldset>
-
-          </div>  
-          <div class="col col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">  
-            <div class="form-group date-time-picker is-focused">
-
-                <input type="text" name="datetimepicker" class=" c-grey" placeholder="Campaign start date" value="10/24/1984">
-                <span class="input-group-addon">
-                  <svg class="olymp-month-calendar-icon icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-icons/sprites/icons.svg#olymp-month-calendar-icon"></use></svg>
-                </span>
-              </div>
-          
-          </div> 
-          <div class="col col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">  
-            <div class="form-group date-time-picker is-focused">
-                <input type="text" name="datetimepicker" class=" c-grey" placeholder="Campaign end date" value="10/24/1984">
-                <span class="input-group-addon">
-                  <svg class="olymp-month-calendar-icon icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-icons/sprites/icons.svg#olymp-month-calendar-icon"></use></svg>
-                </span>
-              </div>
-          </div> 
-           <div class="col col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12"> 
+           
+           <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"> 
 
              <div class="form-group is-empty">
             
@@ -707,80 +694,40 @@
 </div>
 
 
-                <label class="float-right color_hyper" style="margin-top: 10px;"> <a data-toggle="modal" data-target="#create-friend-group-1" href="#" class="btn btn-breez btn-sm">Add Author</a> </label>
+              <a data-toggle="modal" data-target="#create-friend-group-1" href="#" style="color: #333; text-decoration: underline;"> Add Author</a> 
               </div>
           </div>
+                
            
-
-          <div class="col col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12"> 
+                 <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">  
+                    <div class="form-group label-floating">
+                        <textarea class="form-control c-grey" placeholder="About Author"></textarea>
+                      <span class="material-input"></span>
+                    </div>
+                </div>
+                 
+                 <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"> 
              <div class="form-group is-empty">
                   <input class="form-control" type="text" placeholder="Store link">
                 <span class="material-input"></span>
               </div>
-          </div>
+          </div>  
 
-          <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12"> 
-           <label class=newbtn>
-                  <img id="blah" src="http://placehold.it/120x120" >
-                  <input id="pic" class='pis' onchange="readURL(this);" type="file" >
-              </label>
-          </div>
-            <div class="col col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">  
-              <div class="row">
                  <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">  
-                  <div class="form-group label-floating">
-                     <!--  <label class="control-label c-grey">Description(Max 500 words) </label> -->
-                      <textarea class="form-control c-grey" placeholder="About Campaign (Max 500 words"></textarea>
-                    <span class="material-input"></span>
-                  </div>
+                    <div class="form-group label-floating">
+                        <textarea class="form-control c-grey" placeholder="More information"></textarea>
+                      <span class="material-input"></span>
+                    </div>
+                </div>
+                <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">  
+                    <div class="form-group label-floating">
+                        <textarea class="form-control c-grey" placeholder="Book description"></textarea>
+                      <span class="material-input"></span>
+                    </div>
                 </div>
 
-                <div class="col col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">                 
-                  <div class="form-group label-floating is-select">
-                    <label class="control-label">Currency</label>
-                    <select class="selectpicker form-control">
-                      <option value="CA">$</option>
-                      <option value="AR">Rs.</option>
-                    </select>
-                  </div>                 
-              </div>
-               <div class="col col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">                 
-              <div class="form-group md-form  label-floating is-empty with-button c-white">
-                    <label for="Email" class="control-label c-grey" data-success="right" data-error="wrong" >Price</label>
-                    <input class="form-control validate c-white" type="password" placeholder="">                  
-                  
-                  </div>
-                </div>
 
-            </div>
-            <div class="row">
-                 <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                  <div class="form-group md-form  label-floating is-empty with-button c-white">
-                    <label for="Email" class="control-label c-grey" data-success="right" data-error="wrong" >Facebook</label>
-                    <input class="form-control validate c-white" type="password" placeholder="">                  
-                  
-                  </div>
-                </div>
-                 <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                  <div class="form-group md-form  label-floating is-empty with-button c-white">
-                    <label for="Email" class="control-label c-grey" data-success="right" data-error="wrong" >Instagram</label>
-                    <input class="form-control validate c-white" type="password" placeholder="">                  
-                  
-                  </div>
-                </div>
-                 <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                  <div class="form-group md-form  label-floating is-empty with-button c-white">
-                    <label for="Email" class="control-label c-grey" data-success="right" data-error="wrong" >Facebook</label>
-                    <input class="form-control validate c-white" type="password" placeholder="">                  
-                  
-                  </div>
-                </div>
-             
-
-           
-            </div>
-            
-            </div>
+         
           </div>
           <div class="row" style="text-align: right;">
             <div class="col col-xl-12 col-lg-6 col-md-12 col-sm-12 col-12">  
@@ -795,10 +742,90 @@
 
     </div>
 
+<div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+<div class="ui-block" style="  border: 2px dashed #9aaf59;">  
+  <article class="hentry post">       
+          <!-- Post -->      
+     <div class="row post-content">
+       <div class="col m12 l6 s12"> <h3>$ 2500 </h3> </div>
+       <div class="col m12 l6 s12 align-right"><h4>  90 days </h4> </div>
+
+     </div>  
+      <div class="border_top pad_top_campaigns">
+       <div class="row">
+         <div class="col m12 l6 s12"> <h6>Banner Space </h6 > </div>
+         <div class="col m12 l6 s12 align-right">
+            <h6> <a class="btn btn-sm bg-blue color_white border-radius"> Yes </a></h6> 
+         </div>
+       </div>
+         <div class="row">
+         <div class="col m12 l6 s12"> <h6>Interview post </h6 > </div>
+         <div class="col m12 l6 s12 align-right">
+            <h6> <a class="btn btn-sm bg-blue color_white border-radius"> Yes</a></h6> 
+         </div>
+       </div>
+         <div class="row">
+         <div class="col m12 l6 s12"> <h6>Guest post (Optional)</h6 > </div>
+         <div class="col m12 l6 s12 align-right">
+            <h6> <a class="btn btn-sm bg-blue color_white border-radius"> Yes </a></h6> 
+         </div>
+       </div>
+         <div class="row">
+         <div class="col m12 l6 s12"> <h6>Share on social profiles</h6 > </div>
+         <div class="col m12 l6 s12 align-right">
+            <h6> <a class="btn btn-sm bg-blue color_white border-radius"> Yes </a></h6> 
+         </div>
+       </div>
+         <div class="row">
+         <div class="col m12 l6 s12"> <h6>Review  </h6 > </div>
+         <div class="col m12 l6 s12 align-right">
+            <h6> <a class="btn btn-sm bg-blue color_white border-radius"> Upto 15 </a></h6> 
+         </div>
+       </div>
+         <div class="row">
+         <div class="col m12 l6 s12"> <h6>Reviews on Blog , Amazon / Flipkart & Goodreads </h6 > </div>
+         <div class="col m12 l6 s12 align-right">
+            <h6> <a class="btn btn-sm bg-blue color_white border-radius"> Yes </a></h6> 
+         </div>
+       </div>
+         <div class="row">
+         <div class="col m12 l6 s12"> <h6>Reader engagement - Chat / Giveaway / Contests </h6 > </div>
+         <div class="col m12 l6 s12 align-right">
+            <h6> <a class="btn btn-sm bg-blue color_white border-radius"> Yes </a></h6> 
+         </div>
+       </div>
+         <div class="row">
+         <div class="col m12 l6 s12"> <h6>Content creation - Text & Creatives</h6 > </div>
+         <div class="col m12 l6 s12 align-right">
+            <h6> <a class="btn btn-sm bg-blue color_white border-radius"> Yes </a></h6> 
+         </div>
+       </div>
+
+      </div>
+   </article>
+</div>
+         
+          <!-- ... end Post -->
+
+        </div>
+</div>
+
+
   
   </div>
 </div>
-
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn_select");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 <script> 
  $('.newbtn').bind("click" , function () {
         $('#pic').click();

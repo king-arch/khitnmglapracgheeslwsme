@@ -1163,8 +1163,8 @@ blockquote p:before {
 
 .landing-page .content-bg-wrap {
     background: url(../img/landing-users.png);
-    -webkit-animation: sidedownscroll 30s linear infinite;
-    animation: sidedownscroll 30s linear infinite
+    /*-webkit-animation: sidedownscroll 30s linear infinite;
+    animation: sidedownscroll 30s linear infinite*/
 }
 
 .landing-page .content-bg-wrap:before {
@@ -1175,7 +1175,7 @@ blockquote p:before {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(74, 74, 74, 0.95);
+    background-color: rgba(255, 255, 255, 0.95);
     opacity: 1;
     z-index: auto
 }
@@ -1212,10 +1212,10 @@ blockquote p:before {
     height: 100%;
     margin: 0;
     box-sizing: border-box;
-    -webkit-animation: slide 50s linear infinite;
+   /* -webkit-animation: slide 50s linear infinite;
     animation: slide 50s linear infinite;
     will-change: background-position;
-    background-size: contain
+    background-size: contain*/
 }
 
 @-webkit-keyframes slide {
@@ -2074,14 +2074,16 @@ section {
 }
 
 .sub-footer-copyright {
-    padding: 40px 0;
-    text-align: center;
+    padding: 20px 0;
+    text-align: left;
     border-top: 1px solid #e6ecf5;
+    background-color: #454545 !important;
     margin-top: 60px
 }
 
 .sub-footer-copyright span {
-    font-size: 12px
+    font-size: 14px;
+    color: #fff !important;
 }
 
 .sub-footer-copyright a {
@@ -2332,7 +2334,7 @@ section {
 }
 
 .bg-primary-opacity {
-    background-color: rgba(255, 94, 58, .95)
+    background-color: rgba(255, 255, 255, .95)
 }
 
 .bg-purple-dark-opacity {
@@ -2340,7 +2342,7 @@ section {
 }
 
 .stunning-header-bg1 {
-    background-image: url(img/landing-users.png)
+    background-image: url(../img/landing-users.png)
 }
 
 .has-error .form-control-danger,
@@ -5802,7 +5804,7 @@ fieldset[disabled] .checkbox input[type=checkbox] {
 }
 
 .pagination-bottom .swiper-pagination {
-    bottom: 15px
+    bottom: -28px
 }
 
 .btn-next,
@@ -8208,11 +8210,11 @@ ol ol li {
 .friends-harmonic a {
     width: 28px;
     height: 28px;
-    border-radius: 100%;
+    border-radius: 100% !important;
     overflow: hidden;
     border: 2px solid #fff;
     display: block;
-    margin-left: -12px
+    margin-left: -12px !important;
 }
 
 .friends-harmonic li {
@@ -8386,7 +8388,7 @@ ol ol li {
 }
 
 .post-additional-info>* {
-    margin-right: 15px
+    margin-right: 15px !important;
 }
 
 .post-additional-info>:last-child {
@@ -9600,7 +9602,8 @@ ol ol li {
 .available-widget {
     padding: 15px 15px;
     display: table;
-    width: 100%
+    width: 100%;
+    border: 1px solid #e6b1b1;
 }
 
 .available-widget .custom-control-description {
@@ -10613,8 +10616,8 @@ ol ol li {
 }
 
 .single-post .post-title {
-    font-size: 46px;
-    margin-bottom: 35px
+    font-size: 30px;
+    margin-bottom: 15px
 }
 
 .single-post .post-thumb {
@@ -12151,7 +12154,7 @@ ol ol li {
     background-color: #f2f4f8;
     margin-bottom: 10px;
     margin-right: 0;
-    height: 420px;
+    height: 100px;
     width: auto;
     position: relative
 }
@@ -12794,7 +12797,7 @@ ol ol li {
 }
 
 .bg-blue {
-    background-color: #9BAF5A
+    background-color: #4a82e6
 }
 
 .bg-blue-light {
@@ -14239,7 +14242,7 @@ ol ol li {
 }
 
 .swiper-slide-weather {
-    border-bottom: 1px solid #e6ecf5
+    border-bottom: 0px solid #e6ecf5
 }
 
 .day-wethear-item {
@@ -14247,7 +14250,7 @@ ol ol li {
     padding: 25px 0 20px;
     border-right: 1px solid #e6ecf5;
     text-align: center;
-    width: 16.5%
+    width:100%
 }
 
 .day-wethear-item:last-child {
@@ -19321,11 +19324,11 @@ margin-top: 0.5rem; }
   border-radius: 4px;
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: #515365;
   text-align: center;
   font-size: 16px;
   padding: 20px;
-  border: 2px solid #fff !important;
+  border: 2px solid #515365 !important;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -19381,7 +19384,7 @@ margin-top: 0.5rem; }
 
 @media (min-width: 1199px){
 .container {
-  max-width: 1260px;
+  max-width: 1309px;
 }
 }
 
@@ -19440,7 +19443,18 @@ margin-top: 0.5rem; }
     padding: 5px 10px;
     font-weight: 500;   
 }
-
+.top-right-reove{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color: #ccc;
+   
+    padding: 5px 10px;
+    font-weight: 500;   
+}
+.top-right-reove span {
+   color: #fff !important;
+}
 
 .top-right span {
    color: #fff !important;
@@ -19490,7 +19504,7 @@ margin-top: 0.5rem; }
 font-size: 24px !important;
 }
 .margin-10{
-    margin: 10px 0;
+    margin: 10px 0 !important;
 }
 .clearfix{
     clear: both !important;
@@ -19734,3 +19748,52 @@ hr.new4 {
  .form-control {
     border-radius: 0px;
     }
+
+    .btn_select {
+    border: none !important;
+    outline: none !important;
+    padding: 10px 16px !important;
+    background-color: #f1f1f1 !important;
+    cursor: pointer !important;
+    font-size: 18px !important;
+}
+
+/* Style the active class, and buttons on mouse-over */
+#myDIV .active, .btn_select:hover {
+    background-color: #ff5e3a !important;
+    color: white !important;
+}
+
+
+.border_top{
+    border-top: 1px solid #ccc;
+}
+
+.pad_top_campaigns{
+    padding: 10px 0 !important;
+}
+
+.color_white{
+    color: #fff !important;
+}
+.border-radius{
+    border-radius: 40px !important;
+}
+
+.c-darkgray{
+    color: #333 !important;
+}
+.chip {
+    display: inline-block;
+    height: 32px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0,0,0,.6);
+    line-height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+    background-color: #e4e4e4;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+

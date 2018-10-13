@@ -57,7 +57,7 @@
 
      <a href="feed.html" class="link-find-friend">Feed</a>
     <a href="book_listing.html" class="link-find-friend">Book</a>
-     <a href="authors-listing.html" class="link-find-friend">Network</a>
+     <a href="authors-listing.html" class="link-find-friend">Author</a>
       <a href="blog_lisring.html" class="link-find-friend">Blog</a>
        <a href="group_lisring.html" class="link-find-friend">Reading Club</a>
         
@@ -1107,6 +1107,7 @@
             <label class="control-label c-grey">Email</label>
             <input class="form-control" placeholder="" type="email" value="mvalentine@yourmail.com">
           </div>
+           </div>
           <div class="col col-xl-12 col-lg-12 col-md-12">
           <div class="form-group label-floating">
             <label class="control-label c-grey">Role</label>
@@ -1125,16 +1126,17 @@
             <input class="form-control" placeholder="" type="text" value="Valentine">
           </div>
         </div>
+         <div class="col col-xl-12 col-lg-12 col-md-12">
           <div class="form-group label-floating">
             <label class="control-label">H</label>
             <textarea class="form-control c-grey" placeholder="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor labore eter dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </textarea>
           </div>      
 
-          
+          </div>
 
-          <a href="#" class="btn btn-primary btn-lg full-width">Post your Review</a>
-        </div>
+          <a href="#" class="btn btn-primary btn-lg full-width">Update</a>
+       
       </div>
     </form>
       </div>
@@ -1147,8 +1149,8 @@
             <div class="swiper-container">
                <ul class="widget w-personal-info item-block">
                   <li>
-                    <span class="title">Name:</span>
-                    <span class="text">John Deo</span>
+                    <span class="title">Address:</span>
+                    <span class="text">San Francisco, CA</span>
                   </li>  
                   <li>
                     <span class="title">Email:</span>
@@ -1159,8 +1161,129 @@
           </div>
         </div>
         
-       </div>
 
+       </div>
+<div class="ui-block">
+        
+        <!-- Friend Item -->
+        
+        <div class="friend-item">
+          <article class="hentry post">
+        
+            <div class="post__author author vcard inline-items margin-bottom-0">
+          <div class="author-date">
+                <a class="h6 post__author-name fn" href="02-ProfilePage.html">Ineterest</a>
+                
+              </div>
+              <div class="more">
+                <i class="fa fa-ellipsis-h"></i>
+                <ul class="more-dropdown">
+                  <li>
+                    <a data-toggle="modal" data-target="#popup-editinterest" href="#" >Edit Interest</a>
+                  </li>
+                  
+                 <!--  <li>
+                    <a href="#">Delete Post</a>
+                  </li>
+                  <li>
+                    <a href="#">Turn Off Notifications</a>
+                  </li>
+                  <li>
+                    <a href="#">Select as Featured</a>
+                  </li> -->
+                </ul>
+              </div>
+
+            </div></article>
+         <div class="modal fade" id="popup-editinterest" tabindex="-1" role="dialog" aria-labelledby="popup-write-rewiev" aria-hidden="true">
+  <div class="modal-dialog window-popup popup-write-rewiev" role="document">
+    <div class="modal-content">
+      <a href="#" class="close icon-close" data-dismiss="modal" aria-label="Close">
+        <svg class="olymp-close-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-close-icon"></use></svg>
+      </a>
+
+      <div class="modal-header">
+        <h6 class="title">Edit Interest</h6>
+      </div>
+
+      <div class="modal-body">
+        <form class="form-write-rewiev">
+      <div class="row">
+         <div class="col col-xl-4 col-lg-4 col-md-12">
+          <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="optionsCheckboxes">
+                  Action
+                </label>
+              </div>
+
+        </div>
+         <div class="col col-xl-4 col-lg-4 col-md-12">
+         <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="optionsCheckboxes">
+                  Drama
+                </label>
+              </div>
+
+        </div>
+         <div class="col col-xl-4 col-lg-4 col-md-12">
+              <div class="checkbox">
+                <label> <input type="checkbox" name="optionsCheckboxes"> Mystery  </label>
+              </div> 
+         </div>
+          <div class="col col-xl-4 col-lg-4 col-md-12">
+          <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="optionsCheckboxes">
+                  Romance
+                </label>
+              </div>
+
+        </div>
+         <div class="col col-xl-4 col-lg-4 col-md-12">
+          <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="optionsCheckboxes">
+                  Satire
+                </label>
+              </div>
+
+           </div>
+         
+        
+        <div class="col col-xl-4 col-lg-4 col-md-12">
+          <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="optionsCheckboxes">
+                  Science fiction
+                </label>
+              </div>
+
+        </div>
+        
+       
+       
+       
+
+          <a href="#" class="btn btn-primary btn-lg full-width">Update</a>
+       
+      </div>
+    </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+               
+          <div class="friend-item-content">           
+            <div class="swiper-container">
+               <p class="margin-bottom-0"><span class="chip">Drama</span> <span class="chip">Horror</span></p>             
+            </div>
+          </div>
+        </div>
+        
+       </div>
         <div class="ui-block">
 
         
@@ -1209,9 +1332,9 @@
          <div class="ui-block-title">
           <h6 class="title">Up for review </h6>
           <a href="#" class="more">
-            <!-- <span class="c-green">
+            <span class="c-green">
               <svg class="olymp-remove-playlist-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-remove-playlist-icon"></use></svg>
-            </span> -->
+            </span>
           </a>
         </div>
           <div class="friend-item">
@@ -1242,9 +1365,9 @@
         <div class="ui-block-title">
           <h6 class="title"> You may follow </h6>
           <a href="#" class="more">
-            <!-- <span class="c-green">
+            <span class="c-green">
               <svg class="olymp-remove-playlist-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-remove-playlist-icon"></use></svg>
-            </span> -->
+            </span>
           </a>
         </div>
         <div class="birthday-item inline-items">
@@ -1284,9 +1407,9 @@
         <div class="ui-block-title">
           <h6 class="title">New Release book </h6>
           <a href="#" class="more">
-            <!-- <span class="c-green">
+            <span class="c-green">
               <svg class="olymp-remove-playlist-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-remove-playlist-icon"></use></svg>
-            </span> -->
+            </span>
           </a>
         </div>
 
